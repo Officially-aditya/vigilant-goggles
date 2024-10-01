@@ -4,7 +4,7 @@ const app = express();
 const PORT = 4000;
 
 app.get('/route', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'route.json'));
+    res.sendFile(path.join(__dirname, 'route.json'));
 });
 
 app.use(express.static(path.join(__dirname, '..', 'client')));
