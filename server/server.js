@@ -5,7 +5,7 @@ const PORT = 4000;
 
 app.get('/route', (req, res) => {
     console.log('Received request for /route');
-    res.sendFile(path.join(__dirname, '..', 'route.json'));
+    res.sendFile(path.join(__dirname, 'route.json'));
 });
 
 
