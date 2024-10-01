@@ -1,6 +1,6 @@
 async function loadRoute() {
   try {
-      const response = await fetch('/route');
+      const response = await fetch('https://map-application-production.up.railway.app/route');
       if (!response.ok) {
           throw new Error('Network response was not ok');
       }
@@ -10,6 +10,7 @@ async function loadRoute() {
       console.error('There was a problem with the fetch operation:', error);
   }
 }
+
 
 async function initMap() {
   console.log('initMap function called');
